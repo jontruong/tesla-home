@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './Item.css';
+import {motion} from 'framer-motion';
 
 const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink, rightBtnText, rightBtnLink, twoButtons, first}) => {
     return (
@@ -14,11 +15,10 @@ const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink, rightBtnTex
                     <p>
                         {title}
                     </p>
-                    <div className="item-textDesc">
+                    <div className="item__textDesc">
                         <p>{desc}</p>
                     </div>
                 </div>
-            </div>
             <div className="item__lowerThird">
                 <div className="item__buttons">
                     <Button imp='primary' text={leftBtnText} link={leftBtnLink} />
@@ -27,11 +27,16 @@ const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink, rightBtnTex
                     )}
                 </div>
                 {first && (
+                    <motion.div
+                    animate={{y:10}}
+                    transition={{type:"spring", damping:1}}>
                     <div className="item__expand">
                     <ExpandMoreIcon />
                     </div>
+                    </motion.div>
 
                 )}
+            </div>
             </div>
         </div>
     )

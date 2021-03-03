@@ -24,7 +24,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='LEARN MORE'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       first>
       </Item>
       <Item
@@ -36,7 +36,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='EXISTING INVENTORY'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       >
       </Item>
       <Item
@@ -48,7 +48,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='EXISTING INVENTORY'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       >
       </Item>
       <Item
@@ -60,7 +60,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='EXISTING INVENTORY'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       >
       </Item>
       <Item
@@ -72,7 +72,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='EXISTING INVENTORY'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       >
       </Item>
       <Item
@@ -84,7 +84,7 @@ function App() {
       leftBtnLink=''
       rightBtnText='EXISTING INVENTORY'
       rightBtnLink=''
-      twoButtons='true'
+      twoButtons={true}
       >
       </Item>
       <Item
@@ -92,11 +92,11 @@ function App() {
       desc=''
       descLink=''
       backgroundImg={Accessories}
-      leftBtnText='CUSTOM ORDER'
+      leftBtnText='SHOP NOW'
       leftBtnLink=''
-      rightBtnText='EXISTING INVENTORY'
+      rightBtnText=''
       rightBtnLink=''
-      twoButtons='false'
+      twoButtons={false}
       >
       </Item>
     </div>
