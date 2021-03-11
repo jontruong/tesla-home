@@ -8,7 +8,6 @@ const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink, rightBtnTex
     return (
         <div className='item'  style={{
             backgroundImage: `url(${backgroundImg})`
-
         }}>
             <div className="item__container">
                 <div className="item__text">
